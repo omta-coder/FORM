@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: rgba(190, 188, 188, 0.733);
+    }
+    div{
+        border: 1px double #000;
+        padding: 3vh 4vh;
+        line-height: 4vw;
+        font-size: 2vw;
+    }
+    </style>
+
+
+</head>
+<body>
+
+    <div>
+        
+    <h1>This is Show</h1>
+    <hr>
+    <% users.forEach(function(user,index){%>
+          <h3><%= user.name%></h3>
+          <!-- <h3><%= user.author%></h3> -->
+          <p><%= user.description%></p>
+          <a href="/details/<%= user._id%>">Explore More</a>
+          <hr>
+    <%})%>
+        
+    </div>
+
+
+</body>
+</html>

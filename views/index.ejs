@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: rgba(190, 188, 188, 0.733);
+    }
+    form{
+      border: 1px solid #000;
+      text-align: center;
+      padding: 2vw;
+      box-shadow: 5px 5px 2px rgb(92, 63, 63);
+    }
+    input{
+      padding: 1vh;
+      font-size: 1vw;
+    }
+    textarea{
+      padding: 1vh;
+      font-size: 1vw;
+    }
+    button{
+      padding: 1vh 2vh;
+    }
+
+  </style>
+</head>
+<body>
+
+  
+  <form action="/register" method="post">
+    <h1>Registration Page</h1>
+     <hr><br><br>
+    <input type="text" name="name" placeholder="Name">
+    <br><br>
+    <input type="password" name="password" placeholder="Password" required>
+    <br><br>
+    <input type="url" name="image" placeholder="Image">
+    <br><br>
+    <textarea  name="description" placeholder="Description"></textarea>
+    <br><br>
+    <button>Submit</button>
+
+</form>
+  
+</body>
+</html>
